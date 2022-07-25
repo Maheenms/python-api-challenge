@@ -1,4 +1,4 @@
-,City,Lat,Lng,Temperature,Humidity,Cloudiness,Wind Speed,Country,Date
+,City,Lat,Lng,Max Temp,Humidity,Cloudiness,Wind Speed,Country,Date
 0,Fortaleza,-3.7227,-38.5247,80.73,78,75,13.8,BR,1658702145
 1,Kavaratti,10.5669,72.642,81.16,75,100,14.29,IN,1658702396
 2,Airai,-8.9266,125.4092,57.13,55,56,2.46,TL,1658702241
