@@ -1,3 +1,10 @@
+#maually adding personal file
+config.py
+api_keys.py
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
