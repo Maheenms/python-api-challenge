@@ -16,9 +16,8 @@ Inorder to start the assignment we would need to do the following before we begi
 * Inside these folder, add new files called WeatherPy.ipynb and VacationPy.ipynb. These will be the main scripts to run our analysis.
 * Every time we make changes to the directory or files push the above changes to Github.
 * We dont want our api_keys.py file to be exposed to public on github, so we add a .gitignore file to our local repo.
-* Before we add our files to GitHub, we add api_keys.py to the .gitignore file by opening the python-api-challenge github folder in VS code. Then open the .gitignore file and on the first line, type the following code:
-# Adding config.py file.
-api_keys.py
+* Before we add our files to GitHub, we add api_keys.py to the .gitignore file by opening the python-api-challenge github folder in 
+  VS code. Then open the .gitignore file and on the first line, type api_keys.py or config.py, the files where we have the api_keys stored in. 
 * Open git bash in the challenge folder, then git add, git commit, and git push to commit the modifications to .gitignore and the WeatherPy.ipynb file to GitHub.
 * On GitHub, the only new file we should find is the WeatherPy.ipynb file.
 
@@ -85,5 +84,31 @@ For this part of the assignment we need to use Jupyter-gmaps and the Google Plac
 
 
 ## Conclusion/Analysis:
+
+After plotting all the required data in WeatherPy, I've come up with the following conclusions:
+
+![Image](Images/Temp-vs-lat.png)
+
+* Looking at the max.temp vs. latitude plot for the random 620 cities selected. Most of the cities fall above the equator. On (07/24/2022) the cities at the equator projected a max temp between 70-80 degrees F. The cities that are 40 degrees north of the equator projected max temps ranging between 55-100 degrees F. The cities that are close to 80 degrees north of the equator projected max temperature between 40-50 degrees F. 
+
+![Image](Images/linear_regression_north.png) ![Image](Images/Linear_regression_south.png)  
+
+* By looking at pair of the Northern and Southern Hemisphere plots for Max Temp Vs. Latidude, we can we can conclude that the northern hemisphere plot of Max Temp vs.Latitude has a negative correlation and a negative slope in our linear regression equation. We can see that as the latitude increases the temperature decreases. Whereas, in the southern hemisphere plot, we can see it has a positive correlation and Linear regression slope. We can predict from the r^2 value that 60% of the variability in temperature can be explained by latitude in the southern hemisphere. In the northern hemisphere only 40% of the variability in temperature can be explained by the change in latitude. As we go closer to the equator from the south pole, we get warmer weather conditions.
+
+![Image](Images/Cloudiness-vs-lat.png)  
+
+* From the Cloudiness Vs. City Latitude plot, we can conclude that on 07/24/2022, some of the cities had zero cloudiness, some fell between the ranges of 60-100%. More cities above the equator had a higher percentage of cloudiness as compared to the cities that fell under the equator. The cities below the equator had almost equal percentage of cloudiness, most of the cities that are 20 degrees south had zero cloudiness and most of the cities that are 40 degrees south of the equator had 100% cloudiness.
+
+
+For the VacationPy, after creating the heatmap and narrowing down the cities that satisfied my ideal weather conditions. 
+I would like to vacation at Rock Springs, Wyoming USA. 
+
+Here are the screenshots of my results:
+
+![Image](Images/heat_map_2022.png)   
+
+![Image](Images/hotel_map_2022.png)
+
+
 
 
